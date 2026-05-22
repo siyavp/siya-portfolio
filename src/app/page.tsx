@@ -301,6 +301,14 @@ export default function Home() {
                 <span className="tag" title="CSS"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" /></span>
                 <span className="tag" title="TypeScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" /></span>
               </div>
+              <div style={{ display: "flex", gap: "1.5rem", marginTop: "1.25rem" }}>
+                <a href="https://github.com/siyavp/siya-portfolio" target="_blank" rel="noreferrer" className="proj-link" style={{ fontSize: "11px", letterSpacing: ".12em", textTransform: "uppercase", color: "var(--rose-mid)", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: ".4rem", transition: "color .2s" }}>
+                  ↗ View on GitHub
+                </a>
+                <a href="https://siyapatil.vercel.app/" target="_blank" rel="noreferrer" className="proj-link" style={{ fontSize: "11px", letterSpacing: ".12em", textTransform: "uppercase", color: "var(--rose-mid)", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: ".4rem", transition: "color .2s" }}>
+                  ↗ View Live
+                </a>
+              </div>
             </div>
             <div className="proj-visual">
               <div className="proj-mock">
