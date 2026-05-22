@@ -86,7 +86,7 @@ export default function Home() {
           </p>
 
           <div className="hero-btns">
-            <a href="/resume.pdf" className="btn btn-fill">
+            <a href="/Siya Patil Resume.pdf" className="btn btn-fill">
               <svg width="13" height="13" viewBox="0 0 16 16" fill="none">
                 <path d="M8 2v9M4 8l4 4 4-4M2 14h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -385,7 +385,7 @@ export default function Home() {
           <p className="contact-sub">I&apos;m actively seeking SWE internships and new grad roles. Open to any location — let&apos;s connect.</p>
           <div className="contact-row">
             <a href="mailto:siyavp27@gmail.com" className="btn btn-fill">Email Me</a>
-            <a href="/resume.pdf" className="btn btn-outline">Download Resume</a>
+            <a href="/Siya Patil Resume.pdf" className="btn btn-outline">Download Resume</a>
           </div>
           <div className="contact-links">
             <a className="c-link" href="https://www.linkedin.com/in/siya-patil-b01639261/" target="_blank" rel="noreferrer">LinkedIn</a>
