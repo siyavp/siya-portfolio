@@ -5,14 +5,7 @@ import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    // Custom cursor
-    const cur = document.getElementById("cur");
-    const ring = document.getElementById("cur-ring");
-    const onMouseMove = (e: MouseEvent) => {
-      if (cur) { cur.style.left = e.clientX + "px"; cur.style.top = e.clientY + "px"; }
-      if (ring) { ring.style.left = e.clientX + "px"; ring.style.top = e.clientY + "px"; }
-    };
-    document.addEventListener("mousemove", onMouseMove);
+
 
     // Scroll-in for project rows
     const rows = document.querySelectorAll(".proj-row");
@@ -43,7 +36,6 @@ export default function Home() {
     });
 
     return () => {
-      document.removeEventListener("mousemove", onMouseMove);
       io.disconnect();
       navObserver.disconnect();
     };
@@ -55,9 +47,6 @@ export default function Home() {
 
   return (
     <>
-      {/* Cursor */}
-      <div id="cur" />
-      <div id="cur-ring" />
 
       {/* NAV */}
       <nav>
@@ -148,16 +137,26 @@ export default function Home() {
           <div className="sec-eyebrow">About Me</div>
           <h2 className="about-head">Experience.</h2>
           <div className="about-body">
-            <div className="timeline-item">
-              <div className="timeline-date">June 2025 — Present</div>
-              <div className="timeline-role">Student Luxe — CRM Intern</div>
-              <p>Developed dynamic PDF automation templates integrated with Monday.com workflows to automatically generate client-facing documents. Built systems using conditional logic and dynamic CRM data mapping to streamline operational processes and reduce repetitive manual work.</p>
-            </div>
-            <div className="timeline-item">
-              <div className="timeline-date">August 2024 — Present</div>
-              <div className="timeline-role">Physics Research Building — Office Assistant</div>
-              <p>Support daily administrative operations at The Ohio State University&apos;s Physics Research Building by coordinating logistics, organizing operational data, and maintaining efficient communication workflows in a fast-paced research environment.</p>
-            </div>
+              <div className="timeline-item">
+                <div className="timeline-date">May 2026 — Present</div>
+                <div className="timeline-role">OSU Deep Reinforcement Learning Lab — Undergraduate Researcher</div>
+                <p>Designing a Deep Q-Network agent that picks the best frequency band (sub-6 GHz, mmWave, sub-THz) for each time slot in 6G multi-band networks, so the device uses as little power as possible while still hitting a target data rate. Comparing it against LSTM/Transformer forecasting baselines, using PyTorch with DeepMIMO and NYUSIM simulations.</p>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-date">July 2026 — Present</div>
+                <div className="timeline-role">OSU Department of Sociology — Student Technical Consultant</div>
+                <p>Diagnose hardware, software, and system issues while assisting users with technical setup and problem resolution. Support day-to-day IT operations and keep the department&apos;s technology running reliably.</p>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-date">June 2025 — August 2025</div>
+                <div className="timeline-role">Student Luxe — CRM Intern</div>
+                <p>Automated pricing and booking workflows using JavaScript, Google Sheets APIs, and Monday.com, reducing manual operational work by 90%. Built dynamic PDF templates in Eledo and integrated Monday.com, Squarespace, and Eledo to improve CRM data consistency.</p>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-date">August 2024 — August 2026</div>
+                <div className="timeline-role">OSU Physics Research Building — Office Assistant</div>
+                <p>Analyzed and organized 10,000+ delivery records to improve package tracking, and coordinated events and administrative workflows for visitors and staff.</p>
+              </div>
           </div>
         </div>
 
